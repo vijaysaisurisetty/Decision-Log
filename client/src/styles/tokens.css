@@ -1,0 +1,46 @@
+:root {
+  --font-display: "Archivo Black", Impact, "Arial Black", sans-serif;
+  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --yellow: #ffc900;   /* page canvas */
+  --ink: #0f0d0a;      /* text, borders, shadows */
+  --red: #dc341e;      /* signal red */
+  --blue: #1e40c9;     /* process blue */
+  --white: #ffffff;    /* panels */
+  --paper: #f6f1e6;    /* newsprint band */
+  --light-green: #1fb855; /* allowed ONLY for server status light */
+  --ink-70: rgba(15, 13, 10, .72);  /* muted text */
+  --ink-30: rgba(15, 13, 10, .30);  /* dashed rules */
+
+  --bw: 3px;            /* main border width */
+  --bw-thin: 2px;       /* small chips */
+  --border: 3px solid var(--ink);
+  --border-thin: 2px solid var(--ink);
+
+  --radius-panel: 12px;
+  --radius-bubble: 16px;
+  --radius-input: 8px;
+  --radius-pill: 999px;
+  --radius-square: 0;
+
+  --sh-lg: 6px;  /* panels, big buttons */
+  --sh-md: 4px;  /* bubbles, small buttons, toasts */
+  --sh-sm: 3px;  /* chips, calendar card */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  --dot-red: radial-gradient(circle, var(--red) 2px, transparent 2.4px);
+  --dot-ink: radial-gradient(circle, var(--ink) 1.5px, transparent 2px);
+  --dot-white: radial-gradient(circle, #ffffff 2px, transparent 2.4px);
+
+  --ease: 120ms ease-out;
+  color-scheme: light;
+}

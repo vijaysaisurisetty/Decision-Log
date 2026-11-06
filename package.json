@@ -1,0 +1,16 @@
+{
+  "name": "decisionlog",
+  "version": "1.0.0",
+  "description": "DecisionLog - A Project Decision Record",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "seed": "npm --prefix server run seed",
+    "clear": "npm --prefix server run clear",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
+
