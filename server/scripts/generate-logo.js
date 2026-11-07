@@ -197,3 +197,4 @@ console.log("Successfully generated:");
 console.log("- client/public/logo.svg (Square Desktop Icon 512x512)");
 console.log("- client/public/desktop-logo.svg (Wide Desktop Logo 460x110)");
 console.log("- client/public/favicon.svg (Favicon / Taskbar Icon 64x64)");
+

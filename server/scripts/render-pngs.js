@@ -65,3 +65,4 @@ if (fs.existsSync(edgePath)) {
     console.warn("Could not render PNG via Edge:", err.message);
   }
 }
+
