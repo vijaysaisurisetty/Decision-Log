@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Inter:wght@700;800&amp;display=swap');
+      .font-display { font-family: 'Archivo Black', Impact, sans-serif; }
+      .font-ui { font-family: 'Inter', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Icon Tile - Shadow -->
+  <rect x="20" y="18" width="76" height="76" rx="16" ry="16" fill="#0f0d0a" />
+  <!-- Icon Tile - Main -->
+  <rect x="14" y="12" width="76" height="76" rx="16" ry="16" fill="#ffc900" stroke="#0f0d0a" stroke-width="4" />
+  <!-- Icon "DL" -->
+  <text x="52" y="68" class="font-display" font-size="44" fill="#0f0d0a" text-anchor="middle" letter-spacing="-1">DL</text>
+
+  <!-- Brand Wordmark -->
+  <text x="110" y="64" class="font-display" font-size="38" fill="#0f0d0a" letter-spacing="-1">DECISIONLOG</text>
+
+  <!-- Tagline Comic Strip -->
+  <g transform="translate(110, 76)">
+    <rect x="0" y="0" width="180" height="20" rx="4" fill="#0f0d0a" />
+    <rect x="-2" y="-2" width="180" height="20" rx="4" fill="#ffffff" stroke="#0f0d0a" stroke-width="2" />
+    <text x="88" y="12" class="font-ui" font-weight="800" font-size="10" fill="#0f0d0a" text-anchor="middle" letter-spacing="1.5">REMEMBER THE WHY</text>
+  </g>
+
+  <!-- Starburst Badge -->
+  <polygon points="374.00,14.00 376.61,20.17 380.73,14.89 381.65,21.52 387.00,17.48 386.18,24.13 392.38,21.62 389.87,27.82 396.52,27.00 392.48,32.35 399.11,33.27 393.83,37.39 400.00,40.00 393.83,42.61 399.11,46.73 392.48,47.65 396.52,53.00 389.87,52.18 392.38,58.38 386.18,55.87 387.00,62.52 381.65,58.48 380.73,65.11 376.61,59.83 374.00,66.00 371.39,59.83 367.27,65.11 366.35,58.48 361.00,62.52 361.82,55.87 355.62,58.38 358.13,52.18 351.48,53.00 355.52,47.65 348.89,46.73 354.17,42.61 348.00,40.00 354.17,37.39 348.89,33.27 355.52,32.35 351.48,27.00 358.13,27.82 355.62,21.62 361.82,24.13 361.00,17.48 366.35,21.52 367.27,14.89 371.39,20.17" fill="#0f0d0a" />
+  <polygon points="370.00,10.00 372.61,16.17 376.73,10.89 377.65,17.52 383.00,13.48 382.18,20.13 388.38,17.62 385.87,23.82 392.52,23.00 388.48,28.35 395.11,29.27 389.83,33.39 396.00,36.00 389.83,38.61 395.11,42.73 388.48,43.65 392.52,49.00 385.87,48.18 388.38,54.38 382.18,51.87 383.00,58.52 377.65,54.48 376.73,61.11 372.61,55.83 370.00,62.00 367.39,55.83 363.27,61.11 362.35,54.48 357.00,58.52 357.82,51.87 351.62,54.38 354.13,48.18 347.48,49.00 351.52,43.65 344.89,42.73 350.17,38.61 344.00,36.00 350.17,33.39 344.89,29.27 351.52,28.35 347.48,23.00 354.13,23.82 351.62,17.62 357.82,20.13 357.00,13.48 362.35,17.52 363.27,10.89 367.39,16.17" fill="#dc341e" stroke="#0f0d0a" stroke-width="3" stroke-linejoin="round" />
+  <text x="370" y="38" class="font-display" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="central">NEW!</text>
+</svg>
