@@ -4,15 +4,27 @@ import cors from "cors";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import mongoose from "mongoose";
+import path from "path";
+import { fileURLToPath } from "url";
+import fs from "fs";
 import decisionRoutes from "./routes/decisionRoutes.js";
 import taskRoutes from "./routes/taskRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorHandler.js";
 import AppError from "./utils/AppError.js";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const clientDistPath = path.resolve(__dirname, "../../client/dist");
+
 const app = express();
 
-// Security headers
-app.use(helmet());
+// Security headers (disable strict CSP so React assets and Google Fonts load properly)
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false
+  })
+);
 
 // CORS configuration
 const clientOrigin = process.env.CLIENT_ORIGIN || "http://localhost:5173";
@@ -71,7 +83,20 @@ app.use("/api", apiLimiter);
 app.use("/api/decisions", decisionRoutes);
 app.use("/api/tasks", taskRoutes);
 
-// 404 and Error handling
+// Serve compiled client static files in production / when build folder exists
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+
+  // SPA fallback for all GET routes (ignoring /api)
+  app.get("*", (req, res, next) => {
+    if (req.path.startsWith("/api")) {
+      return next();
+    }
+    res.sendFile(path.join(clientDistPath, "index.html"));
+  });
+}
+
+// 404 and Error handling for unhandled routes
 app.use(notFound);
 app.use(errorHandler);
 

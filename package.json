@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node server/src/server.js",
-    "build": "npm --prefix server install",
+    "build": "npm --prefix server install && npm --prefix client install && npm --prefix client run build",
     "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
     "seed": "npm --prefix server run seed",
     "clear": "npm --prefix server run clear",

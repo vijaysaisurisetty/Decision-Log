@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
+    "build": "npm --prefix ../client install && npm --prefix ../client run build",
     "seed": "node src/seed.js",
     "clear": "node src/clear.js",
     "smoke": "node scripts/smoke-test.js"
