@@ -4,6 +4,8 @@
   "description": "DecisionLog - A Project Decision Record",
   "type": "module",
   "scripts": {
+    "start": "node server/src/server.js",
+    "build": "npm --prefix server install",
     "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
     "seed": "npm --prefix server run seed",
     "clear": "npm --prefix server run clear",
