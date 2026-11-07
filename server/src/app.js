@@ -18,6 +18,9 @@ const clientDistPath = path.resolve(__dirname, "../../client/dist");
 
 const app = express();
 
+// Trust proxy for reverse proxies / deployment platforms like Render
+app.set("trust proxy", 1);
+
 // Security headers (disable strict CSP so React assets and Google Fonts load properly)
 app.use(
   helmet({
